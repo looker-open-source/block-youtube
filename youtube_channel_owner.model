@@ -1,0 +1,7 @@
+connection: "@{connection}"
+
+# include all explores
+include: "/explores/*.explore"
+
+# include all the dashboards
+include: "/dashboards/*.dashboard"
