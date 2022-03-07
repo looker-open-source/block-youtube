@@ -1,7 +1,7 @@
 - dashboard: traffic_overview
   title: Traffic Overview
-  layout: tile
-  tile_size: 100
+  preferred_viewer: dashboards-next
+  layout: newspaper
 
   filters:
 
@@ -16,7 +16,7 @@
       column_limit: '50'
       query_timezone: America/Los_Angeles
       custom_color_enabled: false
-      custom_color: forestgreen
+      custom_color: #1A73E8
       show_single_value_title: true
       show_comparison: false
       comparison_type: value
@@ -45,6 +45,10 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
+      row: 0
+      col: 0
+      width: 6
+      height: 6
 
     - name: total_views
       title: Total Views
@@ -56,7 +60,7 @@
       column_limit: '50'
       query_timezone: America/Los_Angeles
       custom_color_enabled: false
-      custom_color: forestgreen
+      custom_color: #7CB342
       show_single_value_title: true
       show_comparison: false
       comparison_type: value
@@ -85,6 +89,10 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
+      row: 0
+      col: 6
+      width: 6
+      height: 6
 
     - name: average_view_time_seconds
       title: Average View Time (Seconds)
@@ -96,7 +104,7 @@
       column_limit: '50'
       query_timezone: America/Los_Angeles
       custom_color_enabled: false
-      custom_color: forestgreen
+      custom_color: #9334E6
       show_single_value_title: true
       show_comparison: false
       comparison_type: value
@@ -125,6 +133,10 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
+      row: 0
+      col: 12
+      width: 6
+      height: 6
 
     - name: average_percent_of_video_watched
       title: Average Percent of Video Watched
@@ -136,7 +148,7 @@
       column_limit: '50'
       query_timezone: America/Los_Angeles
       custom_color_enabled: false
-      custom_color: forestgreen
+      custom_color: #E8710A
       show_single_value_title: true
       show_comparison: false
       comparison_type: value
@@ -165,6 +177,10 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
+      row: 0
+      col: 18
+      width: 6
+      height: 6
 
     - name: performance_by_traffic_source
       title: Performance by Traffic Source
@@ -201,7 +217,7 @@
       show_silhouette: false
       totals_color: "#808080"
       custom_color_enabled: false
-      custom_color: forestgreen
+      custom_color: #1A73E8
       show_single_value_title: true
       show_comparison: false
       comparison_type: value
@@ -213,6 +229,10 @@
       series_colors:
         channel_combined_a2.total_views: "#3B4260"
         channel_combined_a2.avg_view_duration_percentage: "#39A736"
+      row: 6
+      col: 0
+      width: 12
+      height: 6
 
     - name: performance_by_device
       title: Performance by Device
@@ -249,7 +269,7 @@
       show_silhouette: false
       totals_color: "#808080"
       custom_color_enabled: false
-      custom_color: forestgreen
+      custom_color: #EA4335
       show_single_value_title: true
       show_comparison: false
       comparison_type: value
@@ -261,6 +281,10 @@
       series_colors:
         channel_combined_a2.total_views: "#3B4260"
         channel_combined_a2.avg_view_duration_percentage: "#39A736"
+      row: 6
+      col: 12
+      width: 12
+      height: 6
 
     - name: subscribed_vs_non_views
       title: Subscription Views
