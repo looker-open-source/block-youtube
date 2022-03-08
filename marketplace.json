@@ -10,7 +10,10 @@
     "CONNECTION_NAME": {
       "label": "Connection Name",
        "value_constraint": "connection"
-    }
+    },
+     "SCHEMA_NAME": {
+      "label": "Schema Name"
+    }  
   },
   "models": [
     {
