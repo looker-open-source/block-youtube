@@ -10,17 +10,11 @@
     "CONNECTION_NAME": {
       "label": "Connection Name",
        "value_constraint": "connection"
-    },
-    "INSIGHTS_TABLE": {
-      "label": "Insights Table",
-    },
-    "UNNEST_TABLE": {
-      "label": "Unnest Table",
     }
   },
   "models": [
     {
-      "name": "insights_demo",
+      "name": "youtube_channel_owner",
       "connection_constant": "CONNECTION_NAME"
     }
   ]
