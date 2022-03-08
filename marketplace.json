@@ -1,9 +1,9 @@
 {
-  "label": "CCAI Insights",
+  "label": "Youtube",
   "category_label": "Models",
   "branding": {
-    "image_uri": "https://marketplace-api.looker.com/block-icons/ccai_icon.png",
-    "tagline": "CCAI Insights integrates with the Looker Block to aggregate data outside of contact center sources to provide a more holistic view of the business."
+    "image_uri": "https://marketplace-api.looker.com/block-icons/youtube.png",
+    "tagline": "Google’s Block for YouTube Channel Analytics leverages the internal expertise of YouTube professionals to create a suite of rich analysis."
   },
 
   "constants": {
