@@ -1,4 +1,4 @@
-connection: "@{connection}"
+connection: "@{CONNECTION_NAME}"
 
 # include all explores
 include: "/explores/*.explore"
