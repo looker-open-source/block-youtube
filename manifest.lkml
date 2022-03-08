@@ -1,11 +1,11 @@
 project_name: "block_youtube_ads"
 
-constant: connection {
-  value: "4mile_bigquery"
+constant: CONNECTION_NAME {
+  value: "connection_name"
   export: override_optional
 }
 
-constant: schema {
+constant: SCHEMA_NAME {
   value: "youtube_ads_export"
   export: override_optional
 }
