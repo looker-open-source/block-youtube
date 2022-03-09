@@ -1,517 +1,550 @@
 - dashboard: traffic_overview
   title: Traffic Overview
-  preferred_viewer: dashboards-next
   layout: newspaper
-
-  filters:
-
   elements:
-    - name: total_number_sources
-      title: Total Number Sources
-      type: single_value
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      measures: [channel_combined_a2.count_sources]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      custom_color_enabled: false
-      custom_color: #1A73E8
-      show_single_value_title: true
-      show_comparison: false
-      comparison_type: value
-      comparison_reverse_colors: false
-      show_comparison_label: true
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      series_types: {}
-      row: 0
-      col: 0
-      width: 6
-      height: 6
+  - name: Total Number Sources
+    title: Total Number Sources
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: single_value
+    fields: [channel_combined_a2_ycr.count_sources]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    custom_color_enabled: false
+    custom_color: forestgreen
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    hidden_fields: []
+    y_axes: []
+    row: 0
+    col: 0
+    width: 6
+    height: 3
+  - name: Total Views
+    title: Total Views
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: single_value
+    fields: [channel_combined_a2_ycr.total_views]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    custom_color_enabled: false
+    custom_color: forestgreen
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    hidden_fields: []
+    y_axes: []
+    row: 0
+    col: 6
+    width: 6
+    height: 3
+  - name: Average View Time (Seconds)
+    title: Average View Time (Seconds)
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: single_value
+    fields: [channel_combined_a2_ycr.avg_view_duration_s]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    custom_color_enabled: false
+    custom_color: forestgreen
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    hidden_fields: []
+    y_axes: []
+    row: 0
+    col: 12
+    width: 6
+    height: 3
+  - name: Average Percent of Video Watched
+    title: Average Percent of Video Watched
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: single_value
+    fields: [channel_combined_a2_ycr.avg_view_duration_percentage]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    custom_color_enabled: false
+    custom_color: forestgreen
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    hidden_fields: []
+    y_axes: []
+    row: 0
+    col: 18
+    width: 6
+    height: 3
+  - name: Performance by Traffic Source
+    title: Performance by Traffic Source
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: looker_column
+    fields: [channel_combined_a2_ycr.traffic_source, channel_combined_a2_ycr.avg_view_duration_s,
+      channel_combined_a2_ycr.avg_view_duration_percentage, channel_combined_a2_ycr.total_views]
+    sorts: [channel_combined_a2_ycr.total_views desc]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    limit_displayed_rows: false
+    y_axis_combined: false
+    show_y_axis_labels: false
+    show_y_axis_ticks: false
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    custom_color_enabled: false
+    custom_color: forestgreen
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    series_types:
+      channel_combined_a2_ycr.avg_view_duration_s: line
+      channel_combined_a2_ycr.avg_view_duration_percentage: line
+    series_colors:
+      channel_combined_a2_ycr.total_views: "#3B4260"
+      channel_combined_a2_ycr.avg_view_duration_percentage: "#39A736"
+    hidden_fields: []
+    y_axes: []
+    row: 3
+    col: 0
+    width: 12
+    height: 6
+  - name: Performance by Device
+    title: Performance by Device
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: looker_column
+    fields: [channel_combined_a2_ycr.device, channel_combined_a2_ycr.avg_view_duration_s,
+      channel_combined_a2_ycr.avg_view_duration_percentage, channel_combined_a2_ycr.total_views]
+    sorts: [channel_combined_a2_ycr.avg_view_duration_s desc]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    limit_displayed_rows: false
+    y_axis_combined: false
+    show_y_axis_labels: false
+    show_y_axis_ticks: false
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    custom_color_enabled: false
+    custom_color: forestgreen
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    series_types:
+      channel_combined_a2_ycr.avg_view_duration_s: line
+      channel_combined_a2_ycr.avg_view_duration_percentage: line
+    series_colors:
+      channel_combined_a2_ycr.total_views: "#3B4260"
+      channel_combined_a2_ycr.avg_view_duration_percentage: "#39A736"
+    x_axis_label: Device
+    hidden_fields: []
+    y_axes: []
+    row: 3
+    col: 12
+    width: 12
+    height: 6
+  - name: Subscription Views
+    title: Subscription Views
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: looker_pie
+    fields: [channel_combined_a2_ycr.subscribed_status, channel_combined_a2_ycr.total_views]
+    sorts: [channel_combined_a2_ycr.total_views desc]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    value_labels: legend
+    label_type: labPer
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    series_colors:
+      not_subscribed: "#3B4260"
+      subscribed: "#1D98D3"
+    hidden_fields: []
+    y_axes: []
+    row: 9
+    col: 0
+    width: 8
+    height: 7
+  - name: Subscription Views over Time
+    title: Subscription Views over Time
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: looker_area
+    fields: [channel_combined_a2_ycr.subscribed_status, channel_combined_a2_ycr._data_date,
+      channel_combined_a2_ycr.subscribed_status, channel_combined_a2_ycr.total_views]
+    pivots: [channel_combined_a2_ycr.subscribed_status]
+    fill_fields: [channel_combined_a2_ycr._data_date]
+    sorts: [channel_combined_a2_ycr.total_views desc 0, channel_combined_a2_ycr.subscribed_status]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    show_null_points: true
+    point_style: none
+    interpolation: linear
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    value_labels: legend
+    label_type: labPer
+    ordering: none
+    show_null_labels: false
+    series_types: {}
+    series_colors:
+      not_subscribed: "#3B4260"
+      subscribed: "#1D98D3"
+    hidden_fields: []
+    y_axes: []
+    row: 9
+    col: 8
+    width: 8
+    height: 7
+  - name: Subscription by Source
+    title: Subscription by Source
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: looker_donut_multiples
+    fields: [channel_combined_a2_ycr.traffic_source, channel_combined_a2_ycr.subscribed_status,
+      channel_combined_a2_ycr.total_views]
+    pivots: [channel_combined_a2_ycr.subscribed_status]
+    sorts: [channel_combined_a2_ycr.subscribed_status 0, channel_combined_a2_ycr.traffic_source
+        desc]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    show_value_labels: false
+    font_size: 12
+    stacking: ''
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    show_row_numbers: true
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: editable
+    enable_conditional_formatting: false
+    conditional_formatting_ignored_fields: []
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    series_types: {}
+    series_labels:
+      not_subscribed - YouTube Total Views: Not Subscribed
+      subscribed - YouTube Total Views: Subscribed
+    hidden_fields: []
+    y_axes: []
+    row: 9
+    col: 16
+    width: 8
+    height: 7
+  - name: Video Completion Rate by Length of Video
+    title: Video Completion Rate by Length of Video
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: looker_column
+    fields: [video_facts.video_length_minutes_tier, channel_combined_a2_ycr.avg_view_duration_percentage,
+      channel_combined_a2_ycr.video_count]
+    sorts: [video_facts.video_length_minutes_tier]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types:
+      channel_combined_a2_ycr.avg_view_duration_percentage: line
+    hidden_fields: []
+    y_axes: []
+    row: 16
+    col: 0
+    width: 24
+    height: 8
+  - name: Views by Location
+    title: Views by Location
+    model: youtube_channel_owner
+    explore: channel_combined_a2_ycr
+    type: looker_map
+    fields: [channel_combined_a2_ycr.country_code, channel_combined_a2_ycr.total_views]
+    sorts: [channel_combined_a2_ycr.total_views desc]
+    limit: 500
+    column_limit: 50
+    query_timezone: America/Los_Angeles
+    map_plot_mode: points
+    heatmap_gridlines: false
+    heatmap_opacity: 0.5
+    show_region_field: true
+    draw_map_labels_above_data: true
+    map_tile_provider: positron
+    map_position: custom
+    map_scale_indicator: 'off'
+    map_pannable: true
+    map_zoomable: true
+    map_marker_type: circle
+    map_marker_icon_name: default
+    map_marker_radius_mode: proportional_value
+    map_marker_units: meters
+    map_marker_proportional_scale_type: linear
+    map_marker_color_mode: fixed
+    show_view_names: true
+    show_legend: true
+    quantize_map_value_colors: true
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    show_null_points: true
+    point_style: none
+    interpolation: linear
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    value_labels: legend
+    label_type: labPer
+    ordering: none
+    show_null_labels: false
+    series_types: {}
+    series_colors:
+      not_subscribed: "#3B4260"
+      subscribed: "#1D98D3"
+    map_value_scale_clamp_max: 750
+    map_value_colors: ["#7bccc4", "#4eb3d3", "#2b8cbe", "#0868ac", "#084081"]
+    map_latitude: 41.50857729743935
+    map_longitude: 373.35937500000006
+    map_zoom: 1
+    hidden_fields: []
+    y_axes: []
+    row: 24
+    col: 0
+    width: 24
+    height: 8
 
-    - name: total_views
-      title: Total Views
-      type: single_value
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      measures: [channel_combined_a2.total_views]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      custom_color_enabled: false
-      custom_color: #7CB342
-      show_single_value_title: true
-      show_comparison: false
-      comparison_type: value
-      comparison_reverse_colors: false
-      show_comparison_label: true
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      series_types: {}
-      row: 0
-      col: 6
-      width: 6
-      height: 6
-
-    - name: average_view_time_seconds
-      title: Average View Time (Seconds)
-      type: single_value
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      measures: [channel_combined_a2.avg_view_duration_s]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      custom_color_enabled: false
-      custom_color: #9334E6
-      show_single_value_title: true
-      show_comparison: false
-      comparison_type: value
-      comparison_reverse_colors: false
-      show_comparison_label: true
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      series_types: {}
-      row: 0
-      col: 12
-      width: 6
-      height: 6
-
-    - name: average_percent_of_video_watched
-      title: Average Percent of Video Watched
-      type: single_value
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      measures: [channel_combined_a2.avg_view_duration_percentage]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      custom_color_enabled: false
-      custom_color: #E8710A
-      show_single_value_title: true
-      show_comparison: false
-      comparison_type: value
-      comparison_reverse_colors: false
-      show_comparison_label: true
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      series_types: {}
-      row: 0
-      col: 18
-      width: 6
-      height: 6
-
-    - name: performance_by_traffic_source
-      title: Performance by Traffic Source
-      type: looker_column
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      dimensions: [channel_combined_a2.traffic_source]
-      measures: [channel_combined_a2.avg_view_duration_s, channel_combined_a2.avg_view_duration_percentage,
-        channel_combined_a2.total_views]
-      sorts: [channel_combined_a2.total_views desc]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: false
-      show_y_axis_labels: false
-      show_y_axis_ticks: false
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      custom_color_enabled: false
-      custom_color: #1A73E8
-      show_single_value_title: true
-      show_comparison: false
-      comparison_type: value
-      comparison_reverse_colors: false
-      show_comparison_label: true
-      series_types:
-        channel_combined_a2.avg_view_duration_s: line
-        channel_combined_a2.avg_view_duration_percentage: line
-      series_colors:
-        channel_combined_a2.total_views: "#3B4260"
-        channel_combined_a2.avg_view_duration_percentage: "#39A736"
-      row: 6
-      col: 0
-      width: 12
-      height: 6
-
-    - name: performance_by_device
-      title: Performance by Device
-      type: looker_column
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      dimensions: [channel_combined_a2.device]
-      measures: [channel_combined_a2.avg_view_duration_s, channel_combined_a2.avg_view_duration_percentage,
-        channel_combined_a2.total_views]
-      sorts: [channel_combined_a2.avg_view_duration_s desc]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: false
-      show_y_axis_labels: false
-      show_y_axis_ticks: false
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      custom_color_enabled: false
-      custom_color: #EA4335
-      show_single_value_title: true
-      show_comparison: false
-      comparison_type: value
-      comparison_reverse_colors: false
-      show_comparison_label: true
-      series_types:
-        channel_combined_a2.avg_view_duration_s: line
-        channel_combined_a2.avg_view_duration_percentage: line
-      series_colors:
-        channel_combined_a2.total_views: "#3B4260"
-        channel_combined_a2.avg_view_duration_percentage: "#39A736"
-      row: 6
-      col: 12
-      width: 12
-      height: 6
-
-    - name: subscribed_vs_non_views
-      title: Subscription Views
-      type: looker_pie
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      dimensions: [channel_combined_a2.subscribed_status]
-      measures: [channel_combined_a2.total_views]
-      sorts: [channel_combined_a2.total_views desc]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      value_labels: legend
-      label_type: labPer
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      series_types: {}
-      series_colors:
-        not_subscribed: "#3B4260"
-        subscribed: "#1D98D3"
-
-    - name: subscription_views_over_time
-      title: Subscription Views over Time
-      type: looker_area
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      dimensions: [channel_combined_a2.subscribed_status, channel_combined_a2._data_date]
-      pivots: [channel_combined_a2.subscribed_status]
-      fill_fields: [channel_combined_a2._data_date]
-      measures: [channel_combined_a2.total_views]
-      sorts: [channel_combined_a2.total_views desc 0, channel_combined_a2.subscribed_status]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      show_null_points: true
-      point_style: none
-      interpolation: linear
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      value_labels: legend
-      label_type: labPer
-      ordering: none
-      show_null_labels: false
-      series_types: {}
-      series_colors:
-        not_subscribed: "#3B4260"
-        subscribed: "#1D98D3"
-
-    - name: subscription_by_source
-      title: Subscription by Source
-      type: looker_donut_multiples
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      dimensions: [channel_combined_a2.traffic_source, channel_combined_a2.subscribed_status]
-      pivots: [channel_combined_a2.subscribed_status]
-      measures: [channel_combined_a2.total_views]
-      sorts: [channel_combined_a2.subscribed_status 0, channel_combined_a2.traffic_source desc]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      show_value_labels: false
-      font_size: 12
-      stacking: ''
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      show_row_numbers: true
-      truncate_column_names: false
-      hide_totals: false
-      hide_row_totals: false
-      table_theme: editable
-      enable_conditional_formatting: false
-      conditional_formatting_ignored_fields: []
-      conditional_formatting_include_totals: false
-      conditional_formatting_include_nulls: false
-      series_types: {}
-
-
-    - name: video_length_and_viewership_relation
-      title: Video Completion Rate by Length of Video
-      type: looker_column
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      dimensions: [video_facts.video_length_minutes_tier]
-      measures: [channel_combined_a2.avg_view_duration_percentage, channel_combined_a2.video_count]
-      sorts: [video_facts.video_length_minutes_tier]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      show_view_names: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      series_types:
-        channel_combined_a2.avg_view_duration_percentage: line
-
-
-    - name: views_by_geography
-      title: Views by Location
-      type: looker_map
-      model: youtube_channel_owner
-      explore: channel_combined_a2
-      dimensions: [channel_combined_a2.country_code]
-      measures: [channel_combined_a2.total_views]
-      sorts: [channel_combined_a2.total_views desc]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: America/Los_Angeles
-      map_plot_mode: points
-      heatmap_gridlines: false
-      heatmap_opacity: 0.5
-      show_region_field: true
-      draw_map_labels_above_data: true
-      map_tile_provider: positron
-      map_position: fit_data
-      map_scale_indicator: 'off'
-      map_pannable: true
-      map_zoomable: true
-      map_marker_type: circle
-      map_marker_icon_name: default
-      map_marker_radius_mode: proportional_value
-      map_marker_units: meters
-      map_marker_proportional_scale_type: linear
-      map_marker_color_mode: fixed
-      show_view_names: true
-      show_legend: true
-      quantize_map_value_colors: false
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      show_null_points: true
-      point_style: none
-      interpolation: linear
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
-      value_labels: legend
-      label_type: labPer
-      ordering: none
-      show_null_labels: false
-      series_types: {}
-      series_colors:
-        not_subscribed: "#3B4260"
-        subscribed: "#1D98D3"
