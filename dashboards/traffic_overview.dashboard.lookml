@@ -1,5 +1,6 @@
 - dashboard: traffic_overview
   title: Traffic Overview
+  preferred_viewer: dashboards-next
   layout: newspaper
   elements:
   - name: Total Number Sources
