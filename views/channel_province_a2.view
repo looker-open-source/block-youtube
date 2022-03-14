@@ -1,5 +1,5 @@
 view: channel_province_a2 {
-  sql_table_name: @{schema}.channel_province_a2_* ;;
+  sql_table_name: @{schema}.channel_province_a2@{table_suffix} ;;
 
   dimension_group: _data {
     type: time

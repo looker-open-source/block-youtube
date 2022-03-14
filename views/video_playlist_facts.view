@@ -5,7 +5,7 @@ view: video_playlist_facts {
       , sum(playlist_saves_added) as saves_added
       , sum(playlist_saves_removed) as saves_removed
       , sum(views) as views
-      FROM `@{connection}.@{schema}.p_playlist_basic_a1_*`
+      FROM `@{connection}.@{schema}.p_playlist_basic_a1@{table_suffix}`
       group by 1, 2, 3
        ;;
   }

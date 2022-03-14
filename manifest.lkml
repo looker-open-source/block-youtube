@@ -9,3 +9,7 @@ constant: SCHEMA_NAME {
   value: "youtube_ads_export"
   export: override_optional
 }
+
+constant: table_suffix {
+  value: "_yrc"
+}
