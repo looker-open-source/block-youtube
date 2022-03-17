@@ -5,7 +5,7 @@ constant: CONNECTION_NAME {
   export: override_optional
 }
 
-constant: SCHEMA_NAME {
+constant: schema {
   value: "youtube_ads_export"
   export: override_optional
 }
