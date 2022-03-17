@@ -1,6 +1,6 @@
 - dashboard: youtube_overview
   title: YouTube Overview
-  preferred_viewer: dashbboards-next
+  preferred_viewer: dashboards-next
   layout: newspaper
   elements:
   - name: Avg View Time (s) by Source and Subscription
