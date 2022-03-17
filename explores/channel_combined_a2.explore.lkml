@@ -1,7 +1,7 @@
-include: "/views/channel_combined_a2.view"
-include: "/views/video_annotation_facts.view"
-include: "/views/video_playlist_facts.view"
-include: "/views/video_facts.view"
+include: "/views/channel_combined_a2.view.lkml"
+include: "/views/video_annotation_facts.view.lkml"
+include: "/views/video_playlist_facts.view.lkml"
+include: "/views/video_facts.view.lkml"
 
 explore: channel_combined_a2 {
   label: "YouTube Channel"
