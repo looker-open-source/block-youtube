@@ -12,4 +12,5 @@ constant: schema {
 
 constant: table_suffix {
   value: "_yrc"
+  export: override_optional
 }
