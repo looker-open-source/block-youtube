@@ -11,7 +11,7 @@
       "label": "Connection Name",
        "value_constraint": "connection"
     },
-     "SCHEMA_NAME": {
+     "schema": {
       "label": "Schema Name"
     },
      "table_suffix": {
