@@ -13,7 +13,10 @@
     },
      "SCHEMA_NAME": {
       "label": "Schema Name"
-    }  
+    },
+     "table_suffix": {
+      "label": "Table Suffix"
+    }
   },
   "models": [
     {
