@@ -1,9 +1,9 @@
 view: video_facts {
   derived_table: {
     sql: SELECT
-          channel_combined_a2_ycr.video_id  AS video_id,
-          AVG(channel_combined_a2_ycr.average_view_duration_seconds ) AS avg_view_duration_s,
-          MAX(ROUND((channel_combined_a2_ycr.average_view_duration_seconds/(nullif(channel_combined_a2_ycr.average_view_duration_percentage/100,0)) ))) AS video_length_seconds
+          channel_combined_a2.video_id  AS video_id,
+          AVG(channel_combined_a2.average_view_duration_seconds ) AS avg_view_duration_s,
+          MAX(ROUND((channel_combined_a2.average_view_duration_seconds/(nullif(channel_combined_a2.average_view_duration_percentage/100,0)) ))) AS video_length_seconds
         FROM @{schema}.channel_combined_a2_@{table_suffix}  AS channel_combined_a2
         GROUP BY 1
        ;;
