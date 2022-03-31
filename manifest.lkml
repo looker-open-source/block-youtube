@@ -11,6 +11,6 @@ constant: schema {
 }
 
 constant: table_suffix {
-  value: "_yrc"
+  value: "yrc"
   export: override_optional
 }

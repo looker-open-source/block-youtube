@@ -12,7 +12,7 @@ view: video_annotation_facts {
       , sum(annotation_closes) as closes
       , sum(annotation_closable_impressions) as closable_impressions
       , sum(annotation_close_rate) as close_rate
-    FROM `@{CONNECTION_NAME}.@{schema}.channel_annotations_a1@{table_suffix}`
+    FROM `@{CONNECTION_NAME}.@{schema}.channel_annotations_a1_@{table_suffix}`
     group by 1, 2
  ;;
   }

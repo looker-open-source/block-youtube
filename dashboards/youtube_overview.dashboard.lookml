@@ -1,17 +1,18 @@
 - dashboard: youtube_overview
   title: YouTube Overview
-  preferred_viewer: dashboards-next
   layout: newspaper
+  preferred_viewer: dashboards-next
+  description: ''
   elements:
-  - name: Avg View Time (s) by Source and Subscription
-    title: Avg View Time (s) by Source and Subscription
+  - title: Avg View Time (s) by Source and Subscription
+    name: Avg View Time (s) by Source and Subscription
     model: youtube_channel_owner
-    explore: channel_traffic_source_a2_ycr
+    explore: channel_traffic_source_a2
     type: looker_donut_multiples
-    fields: [channel_traffic_source_a2_ycr.subscribed_status, channel_traffic_source_a2_ycr.avg_view_duration_s,
-      channel_traffic_source_a2_ycr.source_type]
-    pivots: [channel_traffic_source_a2_ycr.subscribed_status]
-    sorts: [channel_traffic_source_a2_ycr.avg_view_duration_s desc 0, channel_traffic_source_a2_ycr.subscribed_status]
+    fields: [channel_traffic_source_a2.subscribed_status, channel_traffic_source_a2.avg_view_duration_s,
+      channel_traffic_source_a2.source_type]
+    pivots: [channel_traffic_source_a2.subscribed_status]
+    sorts: [channel_traffic_source_a2.avg_view_duration_s desc 0, channel_traffic_source_a2.subscribed_status]
     limit: 25
     column_limit: 50
     query_timezone: America/Los_Angeles
@@ -48,17 +49,19 @@
     series_colors: {}
     hidden_fields: []
     y_axes: []
+    listen:
+      Date: channel_traffic_source_a2._data_date
     row: 7
     col: 15
     width: 9
     height: 9
-  - name: Views by Traffic Source
-    title: Views by Traffic Source
+  - title: Views by Traffic Source
+    name: Views by Traffic Source
     model: youtube_channel_owner
-    explore: channel_traffic_source_a2_ycr
+    explore: channel_traffic_source_a2
     type: looker_pie
-    fields: [channel_traffic_source_a2_ycr.total_views, channel_traffic_source_a2_ycr.source_type]
-    sorts: [channel_traffic_source_a2_ycr.total_views desc]
+    fields: [channel_traffic_source_a2.total_views, channel_traffic_source_a2.source_type]
+    sorts: [channel_traffic_source_a2.total_views desc]
     limit: 500
     column_limit: 50
     query_timezone: America/Los_Angeles
@@ -94,18 +97,20 @@
     series_colors: {}
     hidden_fields: []
     y_axes: []
+    listen:
+      Date: channel_traffic_source_a2._data_date
     row: 0
     col: 15
     width: 9
     height: 7
-  - name: Top 25 Videos by Views and Time
-    title: Top 25 Videos by Views and Time
+  - title: Top 25 Videos by Views and Time
+    name: Top 25 Videos by Views and Time
     model: youtube_channel_owner
-    explore: channel_traffic_source_a2_ycr
+    explore: channel_traffic_source_a2
     type: looker_bar
-    fields: [channel_traffic_source_a2_ycr.video_id, channel_traffic_source_a2_ycr.total_views,
-      channel_traffic_source_a2_ycr.avg_view_duration_s]
-    sorts: [channel_traffic_source_a2_ycr.total_views desc]
+    fields: [channel_traffic_source_a2.video_id, channel_traffic_source_a2.total_views,
+      channel_traffic_source_a2.avg_view_duration_s]
+    sorts: [channel_traffic_source_a2.total_views desc]
     limit: 25
     column_limit: 50
     query_timezone: America/Los_Angeles
@@ -141,7 +146,24 @@
     series_colors: {}
     hidden_fields: []
     y_axes: []
+    listen:
+      Date: channel_traffic_source_a2._data_date
     row: 0
     col: 0
     width: 15
     height: 16
+  filters:
+  - name: Date
+    title: Date
+    type: field_filter
+    default_value: 30 day
+    allow_multiple_values: true
+    required: false
+    ui_config:
+      type: relative_timeframes
+      display: inline
+      options: []
+    model: youtube_channel_owner
+    explore: channel_traffic_source_a2
+    listens_to_filters: []
+    field: channel_traffic_source_a2._data_date

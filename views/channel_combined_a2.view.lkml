@@ -1,5 +1,5 @@
 view: channel_combined_a2 {
-  sql_table_name: @{schema}.channel_combined_a2@{table_suffix} ;;
+  sql_table_name: @{schema}.channel_combined_a2_@{table_suffix} ;;
 
   ###########################
 #######YouTube Dimensions#######

@@ -1,5 +1,5 @@
 view: channel_subtitles_a2 {
-  sql_table_name: @{schema}.channel_subtitles_a2@{table_suffix} ;;
+  sql_table_name: @{schema}.channel_subtitles_a2_@{table_suffix} ;;
 
   dimension_group: _data {
     type: time
