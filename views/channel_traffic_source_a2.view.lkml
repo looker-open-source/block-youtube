@@ -12,7 +12,7 @@ view: channel_traffic_source_a2 {
       year
     ]
     convert_tz: no
-    sql: ${TABLE}._DATA_DATE ;;
+    sql: CAST(${TABLE}._DATA_DATE AS TIMESTAMP) ;;
   }
 
   dimension_group: _latest {
