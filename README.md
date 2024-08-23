@@ -1,4 +1,5 @@
 # YouTube Ads Block #
+**This is not an officially supported Google product.**
 ## What Does This Block Do For Me? ##
 
 This Block is modeled on the schema brough in by Google's BigQuery Transfer Service. It will cover many of the core entities involved with the AdWords offering. Depending on how you use the DFP service, you may have additional entities brought in through the BQ Transfer Service, especially any custom built reports. This Block should serve as a great jump start. Happy modeling!
