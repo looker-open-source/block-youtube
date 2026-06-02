@@ -1,5 +1,7 @@
 # YouTube Ads Block #
-**This is not an officially supported Google product.**
+
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
 ## What Does This Block Do For Me? ##
 
 This Block is modeled on the schema brough in by Google's BigQuery Transfer Service. It will cover many of the core entities involved with the AdWords offering. Depending on how you use the DFP service, you may have additional entities brought in through the BQ Transfer Service, especially any custom built reports. This Block should serve as a great jump start. Happy modeling!
@@ -10,7 +12,6 @@ The schema documentation for YouTube can be found in [Google's docs](https://dev
 #### Explores ####
 * Channel - Channel Focused Explore, with Playlist and Annotation elements.
 * Traffic Source - Traffic Source Focused Explore
-
 
 #### Dashboards ####
 * Traffic Overview
